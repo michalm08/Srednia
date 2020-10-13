@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+    </style>
+
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="shadow"></div>
+    <div class="myBox">
+        <div class="text">
+            <h3>Średnia</h3>
+        </div>
+
+        <div class="count-average">
+
+                <p>Matematyka</p>
+                <input type="number" class="form-control subject" min="0" max="6">
+            
+                <p>Fizyka</p>
+                <input type="number" class="form-control subject" min="0" max="6">
+            
+            
+                <p>Polski</p>
+                <input type="number" class="form-control subject" min="0" max="6">
+            
+            
+                <p>Angielski</p>
+                <input type="number" class="form-control subject" min="0" max="6">
+          
+            <button type="button" id='checkAverage'>Submit</button>
+            
+            <p>srednia wynosi: <span id='average'></span></p>
+            
+            
+          </div>
+
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
